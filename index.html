@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acampa Teens - Orientações</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="Acampamento.png" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="cabecalho">
+        <div class="cabecalho-esquerda">
+          <button class="botao-menu-toggle" id="botaoMenuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <img
+            src="Acampamento.png"
+            alt="Símbolo Acampa Teens"
+            class="logo-imagem"
+          />
+          <div class="logo">
+            <span class="logo-texto">Acampa Teens</span>
+            <span class="logo-subtitulo">Orientações</span>
+          </div>
+        </div>
+        <div class="cabecalho-direita">
+          <button
+            class="botao-discord"
+            onclick="window.open('https://wa.me/5511956108350', '_blank')"
+          >
+            <i class="fab fa-whatsapp"></i>
+            <span class="texto-discord">Contato</span>
+          </button>
+          <div class="container-busca">
+            <i class="fas fa-search icone-busca"></i>
+            <input
+              type="text"
+              id="campoBusca"
+              placeholder="Busca..."
+              class="campo-busca"
+            />
+            <span class="atalho-busca">ctrl k</span>
+          </div>
+          <button class="alternador-tema" id="alternadorTema">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </header>
+
+      <div class="conteudo-principal">
+        <div class="barra-lateral-esquerda">
+          <nav class="menu-navegacao">
+            <div class="secao-navegacao">
+              <div
+                class="item-navegacao ativo"
+                data-section="orientacoes-gerais"
+              >
+                <i class="fas fa-campground"></i>
+                <span>ORIENTAÇÕES GERAIS</span>
+              </div>
+              <div class="item-navegacao" data-section="o-que-levar">
+                <i class="fas fa-suitcase-rolling"></i>
+                <span>O QUE LEVAR?</span>
+              </div>
+              <div class="item-navegacao" data-section="o-que-nao-levar">
+                <i class="fas fa-ban"></i>
+                <span>O QUE NÃO LEVAR?</span>
+              </div>
+              <div class="item-navegacao" data-section="regras-acampa">
+                <i class="fas fa-scroll"></i>
+                <span>REGRAS DO ACAMPA</span>
+              </div>
+            </div>
+          </nav>
+
+          <div class="info-rodape">
+            <i class="fab fa-github"></i>
+            <a
+              href="https://github.com/MaresHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              MaresHub
+            </a>
+          </div>
+        </div>
+
+        <main class="area-conteudo">
+          <div class="corpo-conteudo" id="corpoConteudo"></div>
+        </main>
+
+        <div class="barra-lateral-direita" id="barraLateralDireita"></div>
+      </div>
+
+      <div class="modal-busca" id="modalBusca">
+        <div class="resultados-busca" id="resultadosBusca"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
