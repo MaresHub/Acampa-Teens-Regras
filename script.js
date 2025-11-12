@@ -108,7 +108,7 @@ function iniciarContagemRegressiva() {
   if (temporizadorContagem) {
     clearInterval(temporizadorContagem);
   }
-  const dataAlvo = new Date("2025-10-31T21:00:00").getTime();
+  const dataAlvo = new Date("2025-11-14T21:00:00").getTime();
   const diasEl = document.getElementById("dias");
   const horasEl = document.getElementById("horas");
   const minutosEl = document.getElementById("minutos");
